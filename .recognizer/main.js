@@ -3,7 +3,7 @@
  * https://github.com/equiet/recognizer
  */
 
-var __recognizer89762809 = (function () {
+var __recognizer622072435 = (function () {
     'use strict';
 
     var global = this;
@@ -157,91 +157,98 @@ var __recognizer89762809 = (function () {
  * Instrumented code
  */
 
+var datas;
 function showLoading() {
-    __recognizer89762809.logEntry([
-        1,
+    __recognizer622072435.logEntry([
+        3,
         9,
-        1,
+        3,
         20
     ], arguments);
-    __recognizer89762809.logProbe([
-        2,
+    __recognizer622072435.logProbe([
         4,
-        2,
+        4,
+        4,
         20
-    ], __recognizer89762809.logProbe([
-        2,
+    ], __recognizer622072435.logProbe([
         4,
-        2,
+        4,
+        4,
         9
     ], alert)('loading'));
 }
 function showOnlines(data) {
-    __recognizer89762809.logEntry([
-        6,
+    __recognizer622072435.logEntry([
+        8,
         9,
-        6,
+        8,
         20
     ], arguments);
-    document.getElementById('text').innerHTML = __recognizer89762809.logProbe([
-        8,
+    document.getElementById('text').innerHTML = __recognizer622072435.logProbe([
+        11,
         48,
-        8,
+        11,
         52
+    ], data);
+    datas = __recognizer622072435.logProbe([
+        12,
+        12,
+        12,
+        16
     ], data);
 }
 function showError(data) {
-    __recognizer89762809.logEntry([
-        11,
+    __recognizer622072435.logEntry([
+        15,
         9,
-        11,
+        15,
         18
     ], arguments);
-    __recognizer89762809.logProbe([
-        13,
+    __recognizer622072435.logProbe([
+        17,
         4,
-        13,
+        17,
         15
-    ], __recognizer89762809.logProbe([
-        13,
+    ], __recognizer622072435.logProbe([
+        17,
         4,
-        13,
+        17,
         9
-    ], alert)(__recognizer89762809.logProbe([
-        13,
+    ], alert)(__recognizer622072435.logProbe([
+        17,
         10,
-        13,
+        17,
         14
     ], data)));
 }
 function changeText() {
-    __recognizer89762809.logEntry([
-        16,
+    __recognizer622072435.logEntry([
+        20,
         9,
-        16,
+        20,
         19
     ], arguments);
-    __recognizer89762809.logProbe([
-        17,
+    __recognizer622072435.logProbe([
+        21,
         4,
-        17,
+        21,
         17
-    ], __recognizer89762809.logProbe([
-        17,
+    ], __recognizer622072435.logProbe([
+        21,
         4,
-        17,
+        21,
         15
     ], showLoading)());
     (function () {
-        var obj = __recognizer89762809.logProbe([
-                18,
+        var obj = __recognizer622072435.logProbe([
+                22,
                 4,
-                18,
+                22,
                 5
-            ], $), fn = __recognizer89762809.logProbe([
-                18,
+            ], $), fn = __recognizer622072435.logProbe([
+                22,
                 6,
-                18,
+                22,
                 10
             ], obj.ajax);
         return fn.apply(obj, arguments);
@@ -249,76 +256,110 @@ function changeText() {
         url: 'onlines.php',
         type: 'GET',
         success: function (data) {
-            __recognizer89762809.logEntry([
-                21,
+            __recognizer622072435.logEntry([
+                25,
                 17,
-                21,
+                25,
                 25
             ], arguments);
-            __recognizer89762809.logProbe([
-                22,
+            __recognizer622072435.logProbe([
+                26,
                 12,
-                22,
+                26,
                 29
-            ], __recognizer89762809.logProbe([
-                22,
+            ], __recognizer622072435.logProbe([
+                26,
                 12,
-                22,
+                26,
                 23
-            ], showOnlines)(__recognizer89762809.logProbe([
-                22,
+            ], showOnlines)(__recognizer622072435.logProbe([
+                26,
                 24,
-                22,
+                26,
                 28
             ], data)));
         },
         fail: function (data) {
-            __recognizer89762809.logEntry([
-                24,
+            __recognizer622072435.logEntry([
+                28,
                 14,
-                24,
+                28,
                 22
             ], arguments);
-            __recognizer89762809.logProbe([
-                25,
+            __recognizer622072435.logProbe([
+                29,
                 12,
-                25,
+                29,
                 23
-            ], __recognizer89762809.logProbe([
-                25,
+            ], __recognizer622072435.logProbe([
+                29,
                 12,
-                25,
+                29,
                 17
-            ], alert)(__recognizer89762809.logProbe([
-                25,
+            ], alert)(__recognizer622072435.logProbe([
+                29,
                 18,
-                25,
+                29,
                 22
             ], data)));
         },
         error: function (data) {
-            __recognizer89762809.logEntry([
-                27,
+            __recognizer622072435.logEntry([
+                31,
                 15,
-                27,
+                31,
                 23
             ], arguments);
-            __recognizer89762809.logProbe([
-                28,
+            __recognizer622072435.logProbe([
+                32,
                 12,
-                28,
+                32,
                 27
-            ], __recognizer89762809.logProbe([
-                28,
+            ], __recognizer622072435.logProbe([
+                32,
                 12,
-                28,
+                32,
                 21
-            ], showError)(__recognizer89762809.logProbe([
-                28,
+            ], showError)(__recognizer622072435.logProbe([
+                32,
                 22,
-                28,
+                32,
                 26
             ], data)));
         }
     }));
+}
+{
+    (function () {
+        var obj = __recognizer622072435.logProbe([
+                37,
+                4,
+                37,
+                11
+            ], console), fn = __recognizer622072435.logProbe([
+                37,
+                12,
+                37,
+                15
+            ], obj.log);
+        return fn.apply(obj, arguments);
+    }.bind(this)(function () {
+        var obj = __recognizer622072435.logProbe([
+                37,
+                16,
+                37,
+                20
+            ], JSON), fn = __recognizer622072435.logProbe([
+                37,
+                21,
+                37,
+                26
+            ], obj.parse);
+        return fn.apply(obj, arguments);
+    }.bind(this)(__recognizer622072435.logProbe([
+        37,
+        27,
+        37,
+        32
+    ], datas))));
 }

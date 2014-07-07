@@ -1,3 +1,5 @@
+var datas;
+
 function showLoading() {
     alert("loading");
     // как-то показываем загрузку
@@ -5,7 +7,9 @@ function showLoading() {
 
 function showOnlines(data) {
     // показываем онлайны
-    document.getElementById("text").innerHTML = data
+
+    document.getElementById("text").innerHTML = data;
+    datas = data;
 }
 
 function showError(data) {
@@ -29,4 +33,7 @@ function changeText() {
         }
 
     });
+} {
+    var durov = JSON.stringify(datas));
+console.log(JSON.parse(durov));
 }
